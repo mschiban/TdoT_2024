@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>TdoT 2024</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +16,202 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-transition="zoom">
+					<h3>ITP2 - Informationstechnische Projekte</h3>
+					<h4>3. und 4. Klasse</h4>
+					<small>Von Moritz Schibani</small>
+				</section>
+				<section data-transition="zoom">
+					<h3>Themen:</h3>
+					<ul>
+						<li><a href="#/tr">Taschenrechner</a></li>
+						<li><a href="#/ssp">Schere-Stein-Papier</a></li>
+						<li><a href="#/minesweeper">Minesweeper</a></li>
+						<li><a href="#/amca">Rennspiel</a></li>
+						<li><a href="#/snake">Snake</a></li>
+					</ul>
+
+				</section>
+				<section id="tr" data-transition="convex">
+					<section>
+						<h2>Taschenrechner: JavaFX</h2>
+						<small>3. Klasse</small>
+					</section>
+					<section>
+						<img src="media/TR_01.png" style="background: rgba(255,255,255,0.1); " width="330" height="589.5">
+					</section>
+					<section>
+						<small>Man kann einfache Rechenoperationen per Mausklick ...</small><br>
+						<img src="media/TR_02.png" style="background: rgba(255,255,255,0.1); " width="330" height="589.5">
+					</section>
+					<section>
+						<small>... oder auch Tastatureingabe eingeben ...</small> <br>
+						<img src="media/TR_04.png" style="background: rgba(255,255,255,0.1); " width="330" height="589.5">
+					</section>
+					<section>
+						<small>... und der Taschenrechner liefert dann ein Ergebnis als Dezimalzahl. </small> <br>
+						<img src="media/TR_03.png" style="background: rgba(255,255,255,0.1); " width="330" height="589.5">
+					</section>
+
+				</section>
+				<section id="ssp" data-transition="convex">
+					<section>
+						<h2>Schere-Stein-Papier: GitHub</h2>
+						<small>3. Klasse</small>
+					</section>
+					<section>
+						<img src="media/SSP_01.png" style="background: rgba(255,255,255,0.1); " width="670" height="516,5">
+					</section>
+					<section>
+						<small>Durch einen Mausklick auf einen der Buttons (Schere, Stein, Papier oder Brunnen) wird eine Aktion ausgewählt ...</small><br>
+						<img src="media/SSP_02.png" style="background: rgba(255,255,255,0.1); " width="670" height="516,5">
+					</section>
+					<section>
+						<small>... der Computer wählt dann durch Zufall auch eine Aktion aus ...</small> <br>
+						<img src="media/SSP_03.png" style="background: rgba(255,255,255,0.1); " width="670" height="516,5">
+					</section>
+					<section>
+						<small>... und dann sieht man, ob man Gewonnen, Verloren oder Unentschieden gespielt hat. </small> <br>
+						<img src="media/SSP_04.png" style="background: rgba(255,255,255,0.1); " width="670" height="516,5">
+					</section>
+
+					<section>
+						<h3>GitHub Version Control</h3> <br>
+						<img src="media/Git_VersionControl.png" style="background: rgba(255,255,255,0.1); " width="849" height="375">
+
+					</section>
+					<section>
+						<h3>GitHub Flow</h3> <br>
+						<img src="media/GitHub-Flow.webp" style="background: rgba(255,255,255,0.1); " width="800" height="276">
+					</section>
+
+				</section>
+				<section id="minesweeper" data-transition="convex">
+					<section>
+						<h2>Minesweeper: GitHub, JavaFX, Rekursion</h2>
+						<small>3. Klasse</small>
+					</section>
+					<section>
+						<img src="media/Minesweeper_01.png" style="background: rgba(255,255,255,0.1); " width="565" height="438">
+					</section>
+					<section>
+						<small>Durch einen Linksklick der Maus auf ein Feld, öffnen sich alle Felder rundherum die leer sind und das jeweilige, wenn keine Bombe dort ist.</small><br>
+						<img src="media/Minesweeper_02.png" style="background: rgba(255,255,255,0.1); " width="565" height="438">
+					</section>
+					<section>
+						<small>Mit einem Rechtsklick der Maus kann ein Feld mit einer Bombe markiert werden.</small> <br>
+						<img src="media/Minesweeper_03.png" style="background: rgba(255,255,255,0.1); " width="565" height="438">
+					</section>
+					<section>
+						<small>Wenn man auf ein Feld mit einer Bombe einen Linksklick macht, verliert man und alle Bomben zeigen sich.</small> <br>
+						<img src="media/Minesweeper_04.png" style="background: rgba(255,255,255,0.1); " width="565" height="438">
+					</section>
+
+					<section data-auto-animate>
+						<h3>Rekursion</h3> <br>
+						<small>Iterativer Ansatz mittels while-Schleife:</small>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						int i = 0;
+						while(i < 10){
+    						System.out.print(++i + " ");
+						}
+					</code></pre>
+					</section>
+					<section data-auto-animate>
+						<h3>Rekursion</h3> <br>
+						<small>Rekursive Ansatz mittels Methode:</small>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						public class Rekursiv {
+
+    						public static int i = 0;
+
+    						public static void rekursiveMethode() {
+        						i++;
+        						System.out.print(i + " ");
+        						if (i < 10) {
+            					rekursiveMethode(); // Rekursion!
+        						}
+    						}
+
+   							public static void main(String[] args) {
+        						rekursiveMethode();
+    						}
+
+						}
+					</code></pre>
+					</section>
+
+				</section>
+				<section id="amca" data-transition="convex">
+					<section>
+						<h2>AMCA-Racing - Rennspiel: PM klassich: Pflichtenheft, Projekthandbuch, PSP, usw..., GitHub</h2>
+						<small>3. Klasse</small>
+					</section>
+					<section>
+						<small>Bei Start des Spiels erscheint ein Menü bei dem man zum Spiel, den Credits oder das Spiel verlassen kann.</small>
+						<img src="media/AMCA-Racing_01.png" style="background: rgba(255,255,255,0.1); " width="563,25" height="590,25">
+					</section>
+					<section>
+						<small>Wenn man Play klickt, kommt eine F1 Autoauswahl, bei der man sein Auto auswählen kann das man nachher fahren will.</small><br>
+						<img src="media/AMCA-Racing_02.png" style="background: rgba(255,255,255,0.1); " width="630" height="515,25">
+					</section>
+					<section>
+						<small>Es folgt ein kurzer Ladebildschirm.</small> <br>
+						<img src="media/AMCA-Racing_03.png" style="background: rgba(255,255,255,0.1); " width="563,25" height="590,25">
+					</section>
+					<section>
+						<small>Nun kann man das Auto mit WASD oder den Pfeiltasten steuern und versuchen den zufällig erscheinenden Hindernissen auszuweichen.</small> <br>
+						<img src="media/AMCA-Racing_04.png" style="background: rgba(255,255,255,0.1); " width="625,5" height="514">
+					</section>
+					<section>
+						Klassiches Projektmanagement <br>
+						<h3>Pflichtenheft</h3>
+						<img src="media/Pflichtenheft.png" style="background: rgba(255,255,255,0.1); " width="500" height="500">
+					</section>
+					<section>
+						Klassiches Projektmanagement <br>
+						<h3>Lastenheft</h3>
+						<img src="media/Lastenheft.png" style="background: rgba(255,255,255,0.1); " width="500" height="500">
+					</section>
+					<section>
+						Klassiches Projektmanagement <br>
+						<h3>PSP - Projektstrukturplan</h3>
+						<img src="media/PSP_Beispiel.png" style="background: rgba(255,255,255,0.1); " width="700" height="403">
+					</section>
+
+				</section>
+				<section id="snake" data-transition="convex">
+					<section>
+						<h2>Snake: SCRUM, JavaFX</h2>
+						<small>4. Klasse</small>
+					</section>
+					<section>
+						<small>Bei Start des Spiels erscheint ein Menü bei dem man zum Spiel, den Einstellungen oder das Spiel verlassen kann.</small>
+						<img src="media/Snake_01.png" style="background: rgba(255,255,255,0.1); " width="751" height="457">
+					</section>
+					<section>
+						<small>Wenn man auf das Einstellungsrad klickt, kommt man zu den Einstellungen, bei denen man die Music ein- und ausschalten und die Lautstärke der Musik regeln kann.</small><br>
+						<img src="media/Snake_02.png" style="background: rgba(255,255,255,0.1); " width="751" height="537">
+					</section>
+					<section>
+						<small>Wenn man auf Play klickt, erscheint die Spielfläche. Nun kann man mit den Pfeiltasten die Schlange steuern.</small> <br>
+						<img src="media/Snake_03.png" style="background: rgba(255,255,255,0.1); " width="536,25" height="564">
+					</section>
+					<section>
+						<small>Wenn man mit der Schlange einen Apfel frisst, wächst diese, der Score geht hoch und ein neuer Apfel erscheint.</small> <br>
+						<img src="media/Snake_04.png" style="background: rgba(255,255,255,0.1); " width="536,25" height="564">
+					</section>
+					<section>
+					<small>Sollte man den Spielrand oder den Schlangenkörper mit dem Kopf der Schlange berühren, ist das Spiel vorbei und ein Game Over Bildschirm erscheint.</small> <br>
+					<img src="media/Snake_05.png" style="background: rgba(255,255,255,0.1); " width="563,25" height="402,75">
+					</section>
+					<section>
+						<h3>SCRUM</h3>
+						<small>Scrum ist eine Methode zur Entwicklung von Projekten, bei der Teams in kurzen Zeiträumen arbeiten, um regelmäßig Fortschritte zu machen und sich flexibel an Veränderungen anzupassen.</small> <br>
+						<img src="media/SCRUM-Events.jpg" style="background: rgba(255,255,255,0.1); " width="616,75" height="397">
+					</section>
+
+				</section>
 			</div>
 		</div>
 
